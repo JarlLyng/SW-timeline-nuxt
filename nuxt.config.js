@@ -24,7 +24,16 @@ export default {
    ** Nuxt.js modules
    ** Doc: https://modules.nuxtjs.org
    */
-  modules: [],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/pwa
+    "@nuxtjs/pwa",
+    "@nuxt/content"
+  ],
+  content: {
+    // Options
+  },
 
   /*
    ** Global CSS
