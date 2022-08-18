@@ -1,4 +1,6 @@
 export default {
+  // Target: https://go.nuxtjs.dev/config-target
+  target: "static",
   /*
    ** Headers of the page
    ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
@@ -11,10 +13,10 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "My personal Nuxt.js starter for CodeSandBox"
-      }
+        content: "My personal Nuxt.js starter for CodeSandBox",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -24,7 +26,23 @@ export default {
    ** Nuxt.js modules
    ** Doc: https://modules.nuxtjs.org
    */
-  modules: [],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/pwa
+    "@nuxtjs/pwa",
+    "@nuxt/content",
+  ],
+  content: {
+    // Options
+  },
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: "en",
+    },
+  },
 
   /*
    ** Global CSS
@@ -36,5 +54,5 @@ export default {
    ** Plugins to load before mounting the App
    ** Doc: https://nuxtjs.org/docs/2.x/directory-structure/plugins
    */
-  plugins: []
+  plugins: [],
 };

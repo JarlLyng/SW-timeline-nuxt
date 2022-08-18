@@ -12,6 +12,8 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
+    "@nuxt/content": "^2.0.1",
+    "@nuxtjs/pwa": "^3.3.5",
     "nuxt": "^2.15.0"
   },
   "keywords": []
