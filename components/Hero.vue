@@ -1,3 +1,3 @@
 <template>
-  <h1>Yellow World!</h1>
+  <h1>Oh, Yellow World!</h1>
 </template>
