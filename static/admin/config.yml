@@ -6,16 +6,19 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'releases'
+    label: 'Releases'
+    folder: 'content/releases'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Release Title', name: 'releasetitle', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'IMDb Link', name: 'imdblink', widget: 'string' }
+      - { label: "Era", name: "era", widget: "select", options: ["The High Republic", "The Fall of the Jedi", "Reign of the Empire", "Age of Rebellion", "The New Republic", "Rise of the First Order"] }
+      - { label: 'Year', name: 'year', widget: "number", default: 1, value_type: "int" }
+  
+  
