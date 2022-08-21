@@ -1,3 +1,3 @@
 <template>
-  <h1>YO! Yellow World!</h1>
+  <h1>The Star Wars Timeline</h1>
 </template>
